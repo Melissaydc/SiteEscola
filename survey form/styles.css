@@ -1,0 +1,24 @@
+body {
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    background-image: url("/img/learn.jpg");
+    background-size: cover;
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h2{
+    width: 100%;
+}
+
+.mb-3 {
+    flex: 1 1 calc(50% - 10px); /* 33.33% de largura para cada item e -10px para o espaçamento entre os itens */
+    margin-right: 10px; /* Espaçamento entre os elementos */
+    margin-bottom: 10px; 
+}
+
+h2, h1, label, #description, #submit {
+    color: aliceblue;
+}

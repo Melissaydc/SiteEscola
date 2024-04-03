@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey%20form/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="survey%20form/styles.css">
+</head>
+
+<body class="d-flex flex-column justify-content-center">
+
+    <form class="d-flex flex-column my-5" action="https://660d98aa6ddfa2943b34cba1.mockapi.io/aluno" method="post" id="survey-form">
+        <h1 class="text-center" id="title">Cadastro</h1>
+        <p class="text-center" id="description">Insira as informações a seguir e se inscreva no curso</p>
+
+        <fieldset class="m-3" >
+            <h2 class="text-center" id="title">Dados do aluno:</h2>
+            <div class="mb-3">
+                <label id="name-label" for="name-label" class="form-label">Nome:</label>
+                <input type="name" name="nomeAluno" class="form-control" id="name" placeholder="Insira seu nome" required>
+            </div>
+            <div class="mb-3">
+                <label id="bairro-label" for="bairro-label" class="form-label">Bairro:</label>
+                <input type="bairro" name="bairroAluno" class="form-control" id="bairro" placeholder="Insira seu bairro">
+            </div>
+            <div class="mb-3">
+                <label id="cidade" for="cidade" class="form-label">Cidade:</label>
+                <input type="cidade" name="cidadeAluno" class="form-control" id="cidade" placeholder="Insira sua cidade">
+            </div>
+            <div class="mb-3">
+                <label id="numero-label" for="numero-label" class="form-label">Número:</label>
+                <input type="number" name="numeroAluno" class="form-control" id="numero" placeholder="Insira seu número">
+            </div>
+            <div class="mb-3">
+                <label id="cep-label" for="cep-label" class="form-label">CEP:</label>
+                <input type="cep" name="cepAluno" class="form-control" id="cep" placeholder="Insira seu CEP">
+            </div>
+            <div class="mb-3">
+                <label id="complemento" for="complemento" class="form-label">Complemento:</label>
+                <input type="complemento" name="complementoAluno" class="form-control" id="complemento" placeholder="Insira seu complemento">
+            </div>
+            <div class="mb-3">
+                <label id="estado-label" for="estado-label" class="form-label">Estado:</label>
+                <input type="estado" name="estadoAluno" class="form-control" id="estado" placeholder="Insira seu estado">
+            </div>
+            <div class="mb-3">
+                <label id="telefone" for="telefone" class="form-label">Telefone:</label>
+                <input type="telefone" name="telAluno" class="form-control" id="telefone" placeholder="Insira seu telefone">
+            </div>
+            <div class="mb-3">
+                <label id="celular" for="celular" class="form-label">Celular:</label>
+                <input type="celular" name="celAluno" class="form-control" id="celular" placeholder="Insira seu celular" required>
+            </div>
+            <div class="mb-3">
+                <label id="email" for="email" class="form-label">E-mail:</label>
+                <input type="email" name="emailAluno" class="form-control" id="email" placeholder="Insira seu email" required>
+            </div>
+            <div class="mb-3">
+                <label id="pele" for="pele" class="form-label">Cor de pele:</label>
+                <select class="form-select mb-3" aria-label="Default select example">
+                    <option selected>Abra o menu</option>
+                    <option value="1">Branca</option>
+                    <option value="2">Preta</option>
+                    <option value="3">Parda</option>
+                    <option value="4">Amarela</option>
+                    <option value="5">Indígena</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset class="m-3">
+            <h2 class="text-center" id="title">Dados do Pai do aluno:</h2>
+            <div class="mb-3">
+                <label id="name-label" for="name-label" class="form-label">Nome:</label>
+                <input type="name" name="nomePai" class="form-control" id="name" placeholder="Insira seu nome" required>
+            </div>
+            <div class="mb-3">
+                <label id="data-nascimento" for="data-nascimento" class="form-label">Data de nascimento:</label>
+                <input type="date" name="nascPai" class="form-control" id="data-nascimento" placeholder="Insira a data de nascimento">
+            </div>
+            <div class="mb-3">
+                <label id="naturalidade" for="naturalidade" class="form-label">Naturalidade:</label>
+                <input type="text" name="naturalidadePai" class="form-control" id="naturalidade" placeholder="Insira a naturalidade">
+            </div>
+            <div class="mb-3">
+                <label id="instrução" for="instrução" class="form-label">Instrução:</label>
+                <input type="text" name="instruçãoPai" class="form-control" id="instrução" placeholder="Insira a instrução">
+            </div>
+            <div class="mb-3">
+                <label id="profissao" for="profissao" class="form-label">Profissão:</label>
+                <input type="text" name="profissaoPai" class="form-control" id="profissao" placeholder="Insira a profissão">
+            </div>
+            <div class="mb-3">
+                <label id="email" for="email" class="form-label">E-mail:</label>
+                <input type="email" name="emailPai" class="form-control" id="email" placeholder="Insira seu email" required>
+            </div>
+            <div class="mb-3">
+                <label id="cpf-label" for="cpf-label" class="form-label">CPF:</label>
+                <input type="text" name="cpfPai" class="form-control" id="cpf" placeholder="Insira seu nome" required>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    É o responsável financeiro
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Não é o responsável financeiro
+                </label>
+            </div>
+        </fieldset>
+
+        <fieldset class="m-3">
+            <h2 class="text-center" id="title">Dados da mãe do aluno:</h2>
+
+            <div class="mb-3">
+                <label id="name-label" for="name-label" class="form-label">Nome:</label>
+                <input type="name" name="nomeMae" class="form-control" id="name" placeholder="Insira seu nome" required>
+            </div>
+            <div class="mb-3">
+                <label id="data-nascimento" for="data-nascimento" class="form-label">Data de nascimento:</label>
+                <input type="date" name="nascMae" class="form-control" id="data-nascimento" placeholder="Insira a data de nascimento">
+            </div>
+            <div class="mb-3">
+                <label id="naturalidade-label" for="naturalidade" class="form-label">Naturalidade:</label>
+                <input type="text" name="naturalidadeMae" class="form-control" id="naturalidade" placeholder="Insira a naturalidade">
+            </div>
+            <div class="mb-3">
+                <label id="instrução-label" for="instrução" class="form-label">Instrução:</label>
+                <input type="text" name="instruçãoMae" class="form-control" id="instrução" placeholder="Insira a instrução">
+            </div>
+            <div class="mb-3">
+                <label id="profissao-label" for="profissao" class="form-label">Profissão:</label>
+                <input type="text" name="profissaoMae" class="form-control" id="profissao" placeholder="Insira a profissão">
+            </div>
+            <div class="mb-3">
+                <label id="celular-label" for="celular" class="form-label">Celular:</label>
+                <input type="celular" name="celularMae" class="form-control" id="celular" placeholder="Insira seu celular" required>
+            </div>
+            <div class="mb-3">
+                <label id="email-label" for="email" class="form-label">E-mail:</label>
+                <input type="email" name="emailMae" class="form-control" id="email" placeholder="Insira seu email" required>
+            </div>
+            <div class="mb-3">
+                <label id="cpf-label" for="cpf" class="form-label">CPF:</label>
+                <input type="cpf" name="cpfMae" class="form-control" id="cpf" placeholder="Insira seu CPF" required>
+            </div>            
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    É o responsável financeiro
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Não é o responsável financeiro
+                </label>
+            </div>
+        </fieldset>
+
+        <fieldset class="m-3">
+            <h2 class="text-center" id="title">Dados do curso do aluno:</h2>
+
+            <div class="mb-3">
+                <label id="name-label" for="name-label" class="form-label">Nome:</label>
+                <input type="name" name="nomeCurso" class="form-control" id="name" placeholder="Insira o nome do curso" required>
+            </div>
+            <div class="mb-3">
+                <label id="data-ingresso" for="data-ingresso" class="form-label">Data de ingresso:</label>
+                <input type="date" name="dataIngressoCurso" class="form-control" id="data-ingresso" placeholder="Insira a data de ingresso" required>
+            </div>
+            <div class="mb-3">
+                <label id="valor-label" for="valor-label" class="form-label">Valor:</label>
+                <input type="number" name="valorCurso" class="form-control" id="valor" placeholder="Insira o valor" required>
+            </div>
+            <div class="mb-3">
+                <label id="parcela-label" for="parcela-label" class="form-label">Total de parcelas:</label>
+                <input type="number" name="totalParcelasCurso" class="form-control" id="parcela" placeholder="Insira o parcela" required>
+            </div>  
+                      
+        </fieldset>
+
+        <fieldset class="m-3">
+            <button id="submit" type="submit" class="btn btn-outline-secondary w-100">Cadastrar</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
